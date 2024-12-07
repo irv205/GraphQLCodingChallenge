@@ -1,0 +1,14 @@
+fragment CharacterFields on Character {
+    id
+    name
+    status
+    species
+    gender
+    image
+    origin {
+        ...OriginFields
+    }
+    location {
+        ...LocationFields
+    }
+}
